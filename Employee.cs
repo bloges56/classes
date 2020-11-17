@@ -9,17 +9,20 @@ namespace classes
         private string _title;
         private DateTime _startDate;
 
+        public string fullName 
+        {
+            get
+            {
+                return $"{_firstName} {_lastName}";
+            }
+        }
+
         public Employee(string firstName, string lastName, string title)
         {
             _firstName = firstName;
             _lastName = lastName;
             _title = title;
             _startDate = DateTime.Now;
-        }
-
-        public string FullName()
-        {
-            return $"{_firstName} {_lastName}";
         }
 
         public string getTitle()
