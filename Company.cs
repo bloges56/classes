@@ -26,7 +26,7 @@ namespace classes
 
         private void printEmployee(Employee employee)
         {
-            Console.WriteLine($"{employee.fullName} works for {_name} as {employee.getTitle()} since {employee.getStartDate()}");
+            Console.WriteLine($"{employee.fullName} works for {_name} as a {employee.getTitle()} since {employee.getStartDate()}");
         }
 
         public void AddEmployee(Employee employee)
