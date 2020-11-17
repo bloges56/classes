@@ -17,12 +17,12 @@ namespace classes
             }
         }
 
-        public Employee(string firstName, string lastName, string title)
+        public Employee(string firstName, string lastName, string title, DateTime startDate)
         {
             _firstName = firstName;
             _lastName = lastName;
             _title = title;
-            _startDate = DateTime.Now;
+            _startDate = startDate;
         }
 
         public string getTitle()
